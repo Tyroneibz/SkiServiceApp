@@ -1,0 +1,19 @@
+﻿<Window x:Class="SkiServiceApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Auftragsmanagement" Height="450" Width="800">
+    <Grid>
+        <DataGrid ItemsSource="{Binding ServiceOrders}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Kundenname" Binding="{Binding Kundenname}" />
+                <DataGridTextColumn Header="Dienstleistung" Binding="{Binding Dienstleistung}" />
+                <DataGridTextColumn Header="Priorität" Binding="{Binding Priorität}" />
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" />
+                <DataGridTextColumn Header="Telefon" Binding="{Binding Telefon}" />
+                
+                <!-- Weitere Spalten... -->
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
